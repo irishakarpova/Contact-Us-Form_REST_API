@@ -1,0 +1,10 @@
+<svg id="success" xmlns="http://www.w3.org/2000/svg" width="65.5" height="62" viewBox="0 0 65.5 62">
+  <g id="warning_sign">
+    <rect id="rectangle" width="61.5" height="61.5" fill="none"/>
+  </g>
+  <rect id="Rectangle_184" data-name="Rectangle 184" width="61" height="61" rx="30.5" transform="translate(4.5 1)" fill="#fff"/>
+  <g id="ic_check" transform="translate(16.5 13)">
+    <rect id="rectangle-2" data-name="rectangle" width="37" height="37" fill="none"/>
+    <path id="path" d="M13.136,24.6,7.092,17.551,3.4,20.967,13.136,32,34,8.358,30.445,4.985Z" transform="translate(0)" fill="#2294e3" fill-rule="evenodd"/>
+  </g>
+</svg>
