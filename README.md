@@ -147,8 +147,7 @@ import axios from "axios"
   
 <h3>Step 5. React Testing Library</h3>
 
-<p>At the end, I use React Testing Library to test my component
-I want to make sure Submit Handler Is Being Called.
-I also add a couple tests for input validations.</p>
+<p>In the end, I use React Testing Library to test my component I want to make sure Submit Handler Is Being Called. I also add a couple of tests for input validation.</p>
+
 
 
