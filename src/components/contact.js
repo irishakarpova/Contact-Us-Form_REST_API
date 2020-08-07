@@ -4,16 +4,19 @@ import ContactForm from './contact-form'
 import WarningMessage from './UI/warning'
 import SuccessMessage from './UI/success'
 
+///error.response.data.error
+
 export default () => {
   const [serverState, setServerState] = useState()
   const [isOpen, setIsOpen] = useState(false)
+
   const serverResponse = (isSuccess, message) => {
     setServerState({isSuccess, message});
   }
   const handleOnSubmit = (values, actions) => {
     axios({
      method: "POST",
-     url: "/api/article",
+     url: "/api/messages",
      data: values
     })
      .then(response => {
