@@ -2,14 +2,14 @@
 <h2>React, Formik, GraphQL</h2>
 <img src='ui.png' width="600" title="description">
 <p>In this branch, let's integrate React UI with GraphQl, and send queries with Apollo Client.</p>
-<p>First, lets install the packages We need</p>
+<p>First, let's install the packages We need</p>
 
 ```javaScript
 npm install @apollo/client graphql
 
 ```
 
-<p>And create and connect to React client to which is we'll be sending a query</p>
+<p>create and connect to React client to which is we'll be sending a query</p>
 
 ```javaScript
 const client = new ApolloClient({
