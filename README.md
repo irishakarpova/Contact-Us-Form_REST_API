@@ -1,15 +1,15 @@
 <h1>Contact form based on GraphQL APIs.</h1>
 <h2>React, Formik, GraphQL</h2>
 <img src='ui.png' width="600" title="description">
-<p>In this branch, I integrate React UI with GraphQl,  send queries with Apollo Client.</p>
-<p>First, l install the packages I need</p>
+<p>In this branch, let's integrate React UI with GraphQl, and send queries with Apollo Client.</p>
+<p>First, lets install the packages We need</p>
 
 ```javaScript
 npm install @apollo/client graphql
 
 ```
 
-<p>Create and connect to React client to which is I`m sending a query</p>
+<p>And create and connect to React client to which is we'll be sending a query</p>
 
 ```javaScript
 const client = new ApolloClient({
@@ -40,14 +40,14 @@ const GETCONTACT = gql`
   
   ```
   
-  <p>I start requesting data with useLazyQuery that returns an array</p>
+  <p>We're requesting data with useLazyQuery that returns an array</p>
   
   ```javaScript
   const [ contact, { called, loading, data, error } ] = useLazyQuery( GETCONTACT );
   
   ```
   
-  <p>useLazyQuery returns an array, the first element in this is a function, which I can use to fetch the data.
+  <p>useLazyQuery returns an array, the first element in this is a function, which We can use to fetch the data.
   
  ```javaScript
    const handleOnSubmit = (values, actions) => {
@@ -64,7 +64,7 @@ const GETCONTACT = gql`
   
  ```
  
- <p>A second element is an object that contains called, loading, error, and data properties I can use to render errors and success messages.</p>
+ <p>A second element is an object that contains called, loading, error, and data properties We can use to render errors and success messages.</p>
  
  ```javaScript
    return (
