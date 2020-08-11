@@ -7,7 +7,6 @@ const useWarning = ( onWarinigClose ) => {
 
   const hideError = () => {
     setVisible(false)
-    console.log(onWarinigClose)
     onWarinigClose();
   }
 
