@@ -7,7 +7,7 @@
 
 
 <h3>Step 1. Adobe XD</h3>
-<p>Let's start by creating the <a href='https://github.com/irishakarpova/Contact-Us-Form_REST_API/blob/master/layout.xd'>design layout</a> of a form component.</p>
+<p>Let's start by creating the <a href='https://github.com/irishakarpova/Contact-Us-Form_REST_API/blob/master/layout.xd'>design layout of a form component.</p>
 
 <h3>Step 2. Form in React</h3>
 <p>Now, We have a functional component of a form that just returns JSX.</p>
