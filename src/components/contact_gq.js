@@ -10,18 +10,17 @@ const GETCONTACT = gql`
   query GetContact( $email: String!, 
                     $name: String!,
                     $message: String!
-  ){ 
-    contact(contactInput: { email: $email, 
-                             name: $name, 
-                             message: $message,
+                    ){ contact(contactInput: { 
+                      email: $email, 
+                      name: $name, 
+                      message: $message,
     }){ success }}            
   `;
 
 export default () => {
 
-  const [ contact, { called, loading, data, error } ] = useLazyQuery( GETCONTACT,
-    { fetchPolicy: "network-only" }
-  );
+  const [ contact, { called, loading, data, error } ] = useLazyQuery( GETCONTACT );
+  
   const [ warningClosed, setWarningClosed ] = useState(false)
   
   const onWarinigClose = () => {
@@ -52,7 +51,8 @@ export default () => {
        {(called && loading) && <Loader/>}
       </div>
       
-      <div className={ (error || data) && !warningClosed ? "d-flex col-md-12 form-hided" : 'd-flex col-md-12' }>
+      <div className={ (error || data) && !warningClosed ? "d-flex col-md-12 form-hided" 
+                                                         : "d-flex col-md-12" }>
         <ContactForm handleOnSubmit = { handleOnSubmit } />               
       </div>
     </>
