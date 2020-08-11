@@ -2,14 +2,15 @@
 <h2>React, Formik, Axios</h2>
 <img src='ui.png' width="350" title="description">
 <p>In my experience, almost every project involves the creation of a form of some kind.  
+</p>
+<p>In this repository, we are going to implement the REST API and <a href='https://github.com/irishakarpova/Contact-Us-Form_RESTful-APIs_and_GraphQL/tree/contact_us_form_qraphQL'>GraphQL approach.</p>
 
-Here are my steps on how I do that.</p>
 
 <h3>Step 1. Adobe XD</h3>
-<p>I start by creating the <a href='https://github.com/irishakarpova/Contact-Us-Form_REST_API/blob/master/layout.xd'>design layout</a> of a form component.</p>
+<p>Let's start by creating the <a href='https://github.com/irishakarpova/Contact-Us-Form_REST_API/blob/master/layout.xd'>design layout</a> of a form component.</p>
 
 <h3>Step 2. Form in React</h3>
-<p>Now, I have a functional component of a form that just returns JSX.</p>
+<p>Now, We have a functional component of a form that just returns JSX.</p>
 
 ```javaScript
 export default () => {
@@ -40,7 +41,7 @@ export default () => {
 ```
 
 <h3>Step 3. Formik</h3>
-<p>At this step, I `m going to use the Formik library that helps me to get values out of form state and implement handling form submission.</p>
+<p>At this step, We're going to use the Formik library that helps to get values out of form state and implement handling form submission.</p>
 
 ```javaScript
 import { Formik, Form, Field } from "formik"
@@ -93,7 +94,7 @@ import { Formik, Form, Field } from "formik"
 
 ```
 
-<p>In addition, I am going to import yup to validate the fields.</p>
+<p>In addition, We are going to import the yup library to validate the fields.</p>
 
 ```javaScript
 import * as Yup from "yup";
@@ -148,7 +149,7 @@ import axios from "axios"
   
 <h3>Step 5. React Testing Library</h3>
 
-<p>In the end, I use React Testing Library to test my component I want to make sure Submit Handler Is Being Called. I also add a couple of tests for input validation.</p>
+<p>In the end, We use React Testing Library to test components. We want to make sure Submit Handler Is Being Called. We also, add a couple of tests for input validation.</p>
 
 
 
