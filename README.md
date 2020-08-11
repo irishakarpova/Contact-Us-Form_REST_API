@@ -1,4 +1,4 @@
-<h1>Contact form based on GraphQL APIs.</h1>
+<h1>Contact form based on GraphQL APIs</h1>
 <h2>React, Formik, GraphQL</h2>
 <img src='ui.png' width="600" title="description">
 <p>In this branch, let's integrate React UI with GraphQl, and send queries with Apollo Client.</p>
