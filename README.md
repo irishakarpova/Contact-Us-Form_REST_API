@@ -1,6 +1,6 @@
 <h1>Contact form based on GraphQL APIs.</h1>
 <h2>React, Formik, GraphQL</h2>
-<img src='ui.png' width="350" title="description">
+<img src='ui.png' width="600" title="description">
 <p>In this branch, I integrate React UI with GraphQl,  send queries with Apollo Client.</p>
 <p>First, l install the packages I need</p>
 
