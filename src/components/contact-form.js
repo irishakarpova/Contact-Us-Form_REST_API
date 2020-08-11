@@ -13,25 +13,27 @@ export default (props) => {
       <h1>CONTACT US</h1>
       <Formik
         initialValues={{ name: "", email: "", message: "" }}
-        onSubmit={props.handleOnSubmit}
+        onSubmit= {(values, actions) => { 
+          props.handleOnSubmit(values, actions)
+        }}
         validationSchema={validationSchema}
       >
       {({ isSubmitting }) => (
         <Form id="cnt-form" noValidate>
           <div className="form-group col-md-12 p-0">
            <label className="input-lebel" htmlFor="name">Name</label>
-            <Field data-testid="name" id="name" type="text" name="name" className="form-control" />
+            <Field data-testid="name" type="text" name="name" className="form-control" />
             <ErrorMessage data-testid="errors-name" name="name" className="errorMessage" component="div" />
           </div>
+
           <div className="form-group col-md-12 p-0">
             <label className='input-lebel' htmlFor="email">Email</label>
-            <Field data-testid="email" id="email" type="email" name="email" className="form-control" />
+            <Field data-testid="email" type="email" name="email" className="form-control" />
             <ErrorMessage data-testid="errors-email" name="email" className="errorMessage" component="div" />
           </div>
           <div className="form-group col-md-12 p-0">
             <label className='textarea-lebel' htmlFor="message">Question&Comments</label>
             <Field data-testid="message"
-                   id="message"
                    name="message"
                    component="textarea"
                    rows="3"

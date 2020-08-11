@@ -1,8 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import bgImage from './components/bgImage.png'
-import ContactUs from './components/contact'
-
+import ContactUs from './components/contact_gq'
 import './App.css'
 
 

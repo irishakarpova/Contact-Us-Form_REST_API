@@ -1,21 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './alert-msg.css'
 
-export default (props) => {
+const useWarning = ( onWarinigClose ) => {
+  
+  const [visible, setVisible] = useState(true)
 
-  return(
-    <>
-      <div className='warning-msg'></div>
-      <div className='d-flex flex-column align-items-center justify-content-center alert-warning col-md-10 m-auto p-0'>
-        <div className='icon-msg-wng'></div>
-        {props.message}
-        <p>Sorry <br/> your specific request <br/> is temporarily inaccessible.</p>
-        <button className='button-warning-border'
-                onClick={props.handleClickClose}
-        >
-          HIDE
-        </button>
-      </div>
-    </>
-  )
+  const hideError = () => {
+    setVisible(false)
+    console.log(onWarinigClose)
+    onWarinigClose();
+  }
+
+  const errorMsg = visible ? (
+                        <div className='alert-warning 
+                                        d-flex mb-3 flex-column 
+                                        align-items-center 
+                                        justify-content-center 
+                                        col-md-10 m-auto p-0'>
+                          <div className='icon-msg-wng'></div>
+                          <p>Sorry <br/> your specific request <br/> is temporarily inaccessible.</p>
+                          <button className='button-warning-border'
+                                  onClick= {() =>  hideError() }
+                          >
+                            HIDE
+                          </button>
+                        </div>
+                        ) : null
+
+  return [ errorMsg, hideError ]
 }
+export default useWarning
+
+
