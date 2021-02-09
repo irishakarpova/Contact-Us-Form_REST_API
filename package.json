@@ -23,6 +23,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "3.4.1",
+    "webpack-dev-server": "^3.11.2",
     "yup": "^0.28.3"
   },
   "scripts": {
@@ -31,7 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.tsx, .js'"
+    "compile": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
