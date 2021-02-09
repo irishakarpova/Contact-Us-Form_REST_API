@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+.back-component{
+  overflow: auto;
+  padding: 0;
+  height: 100vh;
+  width: auto;
+  padding: 0;
+}
+.back-component img{
+  height: 100vh;
+  1height: auto;
+  padding: 0;
+}
+@media(max-width: 576px){
+  .back-component img{
+    height: auto;
+    width: 100%;
+  }
+  .back-component{
+    overflow: auto;
+    padding: 0;
+    height: 5vh;
+    width: 100vw;
+  }
+}
+.form-component{
+  height: 90vh;
+}
+.form-hided{
+  filter: blur(10px);
+}
